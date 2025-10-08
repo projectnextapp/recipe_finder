@@ -31,7 +31,7 @@ export default function RecipeDetail() {
       </ul>
       <h3>Instructions:</h3>
       <p>{recipe.strInstructions}</p>
-      {recipe.strSource && <a href={recipe.strSource} target="_blank" rel="noreferrer">View Full Recipe</a>}
+      // {recipe.strSource && <a href={recipe.strSource} target="_blank" rel="noreferrer">View Full Recipe</a>}
     </div>
   );
 }
