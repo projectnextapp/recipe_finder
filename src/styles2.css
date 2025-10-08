@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  
+  color: #333;
+
+  background-color: #F9F9F9;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+
+background-color: #4CAF50;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.logo {
+  color: #FF9800;
+  font-weight: 700;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #FF9800;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 80px;
+  /* background: #fff3e4; */
+  background: #F9F9F9;
+}
+.hero-content {
+  max-width: 550px;
+}
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+.search-bar {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.get-started {
+  background: #FF9800;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.search-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 220px;
+}
+.search-btn {
+  background: #FF9800;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.hero-image img {
+  width: 70vh;
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.recipes {
+  padding: 40px;
+  background-color: #fafafa;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+  box-shadow: 0 2px 8px #FF9800;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-card h3 {
+  margin-top: 10px;
+}
+
+.hero-image img {
+
+ /* width: 120%; /* makes it slightly larger */
+  /* max-width: 700px; adjust depending on your design */ 
+  border-radius: 15px;
+ 
+
+  opacity: 0;
+  transform: scale(1.05);
+  animation: fadeInZoom 1s ease forwards;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
