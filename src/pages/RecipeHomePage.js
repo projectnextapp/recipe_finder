@@ -88,7 +88,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles2.css";
 import chefImage from "../images/chef.png";
-import cookingVideo from "../video/cooking.mp4";
+
 
 
 export default function RecipeHomePage() {
