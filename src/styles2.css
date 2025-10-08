@@ -100,9 +100,7 @@ background-color: #4CAF50;
   cursor: pointer;
   color: #fff;
 }
-.hero-image img {
-  width: 70vh;
-}
+
 
 
 /* Footer */
@@ -148,14 +146,20 @@ footer {
 
 .hero-image img {
 
- /* width: 120%; /* makes it slightly larger */
-  /* max-width: 700px; adjust depending on your design */ 
+ 
+  max-width: 500px;  
+  /*adjust depending on your design */ 
   border-radius: 15px;
  
 
   opacity: 0;
   transform: scale(1.05);
   animation: fadeInZoom 1s ease forwards;
+}
+
+.hero-image img {
+  /* width: 70vh; */
+  width: 100%; height: auto;
 }
 
 @keyframes fadeInZoom {
