@@ -97,6 +97,8 @@ export default function RecipeHomePage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+
+
   const fetchRecipes = async () => {
     if (!search.trim()) return;
     setLoading(true);
@@ -130,10 +132,11 @@ export default function RecipeHomePage() {
   return (
     <div className="App">
       <nav className="navbar">
+        
         <h2 className="logo">SPICYCHEF RECIPE FINDER</h2>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/favorites">Favorites</Link></li>
+          {/* <li><Link to="/">Home</Link></li> */}
+          <li><Link to="/favorites"><button className="search-btn">View Favorites</button></Link></li>
         </ul>
       </nav>
 
@@ -155,7 +158,7 @@ export default function RecipeHomePage() {
        
     
         <div className="hero-image">
-          <img src={chefImage} alt="Chef illustration" />
+          <img src={chefImage} loading="lazy" alt="Chef illustration" />
 
 
 
@@ -176,7 +179,7 @@ export default function RecipeHomePage() {
                   <h3>{recipe.strMeal}</h3>
                 </Link>
                 <p>{recipe.strInstructions.substring(0, 100)}...</p>
-                <button onClick={() => addToFavorites(recipe)}>❤️ Add to Favorites</button>
+                <button onClick={() => addToFavorites(recipe)}> Add to Favorites</button>
               </div>
             ))}
           </div>
@@ -186,6 +189,9 @@ export default function RecipeHomePage() {
       <footer>
         <p>© 2025 SPICYCHEF. All rights reserved. Designed by Egwi U. Kelvin</p>
       </footer>
+
+      
     </div>
+    
   );
 }
