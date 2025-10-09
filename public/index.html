@@ -2,25 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#4CAF50" />
+
+    <!-- ✅ SEO: Title and Description -->
+    <title>SpicyChef Recipe Finder | Discover Delicious Meals Instantly</title>
     <meta
       name="description"
-      content="student dashboard "
+      content="Find recipes by ingredients, meal type, or cuisine with SpicyChef Recipe Finder. Get cooking instructions, ingredients list, and easy meal ideas instantly."
     />
+
+    <!-- ✅ Keywords for SEO -->
+    <meta
+      name="keywords"
+      content="recipe finder, food recipes, easy meals, cooking app, dinner ideas, SpicyChef, healthy recipes, ingredient search"
+    />
+
+    <!-- ✅ Author -->
+    <meta name="author" content="SpicyChef Team" />
+
+    <!-- ✅ Open Graph (for social media preview) -->
+    <meta property="og:title" content="SpicyChef Recipe Finder" />
+    <meta
+      property="og:description"
+      content="Discover thousands of recipes instantly. Search by ingredients, cuisine, or meal type with SpicyChef Recipe Finder."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="https://spicychef.pncnigeria.org/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter Card (for Twitter previews) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SpicyChef Recipe Finder" />
+    <meta
+      name="twitter:description"
+      content="Quickly find and save recipes you’ll love — all in one app."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+
+    <!-- ✅ Apple & PWA support -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-       <title>RECIPE FINDER APP</title>
+
+    <!-- ✅ Structured Data (Google Rich Results) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SpicyChef Recipe Finder",
+        "url": "https://spicychef.pncnigeria.org/",
+        "description": "Search, explore, and save recipes from around the world. Perfect for home cooks and food lovers.",
+        "applicationCategory": "FoodApplication",
+        "operatingSystem": "Web",
+        "image": "%PUBLIC_URL%/logo192.png",
+        "author": {
+          "@type": "Organization",
+          "name": "SpicyChef"
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>An app at your convenience.</noscript>
     <div id="root"></div>
-    
   </body>
 </html>
