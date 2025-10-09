@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import "../styles2.css";
 
 export default function RecipeDetail() {
   const { id } = useParams();
@@ -31,7 +32,7 @@ export default function RecipeDetail() {
       </ul>
       <h3>Instructions:</h3>
       <p>{recipe.strInstructions}</p>
-     {/* {recipe.strSource && <a href={recipe.strSource} target="_blank" rel="noreferrer">View Full Recipe</a>} */}
+      {/* {recipe.strSource && <a href={recipe.strSource} target="_blank" rel="noreferrer">View Full Recipe</a>} */}
     </div>
   );
 }
