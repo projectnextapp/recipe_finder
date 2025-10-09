@@ -308,6 +308,125 @@ footer {
 
 
 
+/* =============================== */
+/* Recipe Detail Page Styling */
+/* =============================== */
+
+.recipe-detail {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #333;
+  line-height: 1.7;
+  font-family: 'Arial', sans-serif;
+  animation: fadeInUp 0.6s ease;
+}
+
+.recipe-detail h1 {
+  font-size: 2.2rem;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-detail img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.recipe-detail img:hover {
+  transform: scale(1.03);
+}
+
+/* Back button */
+.recipe-detail a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.recipe-detail a:hover {
+  color: #FF9800;
+}
+
+/* Section Headings */
+.recipe-detail h3 {
+  margin-top: 30px;
+  color: #FF9800;
+  font-size: 1.4rem;
+  border-left: 4px solid #FF9800;
+  padding-left: 10px;
+}
+
+/* Ingredients list */
+.recipe-detail ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.recipe-detail ul li {
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 4px solid #4CAF50;
+  transition: background 0.3s ease;
+}
+
+.recipe-detail ul li:hover {
+  background: #f1f1f1;
+}
+
+/* Instructions */
+.recipe-detail p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .recipe-detail {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .recipe-detail h1 {
+    font-size: 1.8rem;
+  }
+
+  .recipe-detail img {
+    max-width: 100%;
+  }
+
+  .recipe-detail ul li {
+    font-size: 15px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
